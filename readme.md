@@ -34,6 +34,17 @@
 
    more on the AsyncTask can be read here : https://developer.android.com/reference/android/os/AsyncTask.html
 
+5. jst added some more code in my java class for the implementtation of the asynctask.Used many types of code while 
+   writing code for this app like log.t , log.d , log.e.
+   in some places used log.e instead of log.d as we are using it here for the errors not for debugging process.
+   
+6. here used the concept of the buffered reader - that buffers the inputstreamreader and it is the buffered reader
+   that will be actually used to read the xml.
+   here the input stream reader uses the input object as the source of its data and the input stream is created from
+   our open http connection.
+
+   more info on Bufferred reader can be read here : https://developer.android.com/reference/java/io/BufferedReader.html
+
 
 
 
