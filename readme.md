@@ -16,6 +16,22 @@
    IT itself in general is not a full information ie it generally contains summary.
 
 
+     12th june
+   ==============
+
+1. jst started off today with the ASYNCTASK- used to perform the download on the seperate thread and get notified
+   when the download is finished.
+   so it prevents the freezing in the device.
+
+2. here i am starting with firstly creating a new class for the Asynctask activity but not a new class page
+   creating it as a subclass within the main class as it will not be used by anything else.
+
+3. here i am taking the advantage of the asynchronous processing that the android framework provides us with.
+
+   so we jst have to type the code for the implementation rest is all handeled by the android studio.
+
+
+
 
 
 
