@@ -51,6 +51,12 @@
 
    more info on the permissions can be seen from here : https://developer.android.com/guide/topics/permissions/overview
 
+8. at end jst added some new classes to the java code in order to feed the data retrieved from the xml pages and also used
+   xml pull parsers in the java classes ...
+
+   more info regarding xml pullparser can be read here : https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html
+
+
 
 
 
