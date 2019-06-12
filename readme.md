@@ -30,6 +30,10 @@
 
    so we jst have to type the code for the implementation rest is all handeled by the android studio.
 
+4. here i will be using three parameters for the asynctask processing nd will be taking advantage of all.
+
+   more on the AsyncTask can be read here : https://developer.android.com/reference/android/os/AsyncTask.html
+
 
 
 
