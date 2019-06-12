@@ -45,6 +45,12 @@
 
    more info on Bufferred reader can be read here : https://developer.android.com/reference/java/io/BufferedReader.html
 
+7. other things used in my app are the permissions for the internet connection inorer to retrive data from the web and also 
+   wrote code for some exception in order to make my app crash free.worked on the exceptions like Malformedurlexception , 
+   IOexception etc.
+
+   more info on the permissions can be seen from here : https://developer.android.com/guide/topics/permissions/overview
+
 
 
 
