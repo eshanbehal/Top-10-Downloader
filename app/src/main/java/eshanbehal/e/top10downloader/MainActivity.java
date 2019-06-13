@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             Log.d(TAG, "onPostExecute: parameter is " + s);
+            ParseApplication parseApplication = new ParseApplication();
+            parseApplication.parse(s);
         }
 
         @Override
