@@ -1,6 +1,7 @@
 package eshanbehal.e.top10downloader;
 
 public class FeedEntry {
+
     private String name;
     private String artist;
     private String releaseDate;
@@ -47,11 +48,11 @@ public class FeedEntry {
         this.imageURL = imageURL;
     }
 
-    @Override
-    public String toString() {
-        return "name='" + name + '\n' +
-                ", artist='" + artist + '\n' +
-                ", releaseDate='" + releaseDate + '\n' +
-                ", imageURL='" + imageURL + '\n';
-    }
+//    @Override
+//    public String toString() {
+//        return "name=" + name + '\n' +
+//                ", artist=" + artist + '\n' +
+//                ", releaseDate=" + releaseDate + '\n' +
+//                ", imageURL=" + imageURL + '\n';
+//    }
 }

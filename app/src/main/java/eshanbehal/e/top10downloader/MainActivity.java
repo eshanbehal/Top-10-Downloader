@@ -44,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "onPostExecute: parameter is " + s);
             ParseApplication parseApplication = new ParseApplication();
             parseApplication.parse(s);
-            ArrayAdapter<FeedEntry> arrayAdapter= new ArrayAdapter<FeedEntry>(MainActivity.this , R.layout.list_item , parseApplication.getApplications());
-            listApps.setAdapter(arrayAdapter);
+//            ArrayAdapter<FeedEntry> arrayAdapter= new ArrayAdapter<FeedEntry>(MainActivity.this , R.layout.list_item , parseApplication.getApplications());
+//            listApps.setAdapter(arrayAdapter);
+            FeedAdapter feedAdapter = new FeedAdapter(MainActivity.this,
+                    R.layout.list_record, parseApplication.getApplications());
+            listApps.setAdapter(feedAdapter);
+
         }
 
         @Override
@@ -89,10 +93,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "downloadXML: Invalid URL " + e.getMessage());
             } catch(IOException e) {
                 Log.e(TAG, "downloadXML: IO Exception reading data: " + e.getMessage());
-            }catch(SecurityException e){
-                Log.e(TAG, "downloadXML: Security exception. Needs Permission? " + e.getMessage() );
-
+            } catch(SecurityException e) {
+                Log.e(TAG, "downloadXML: Security Exception.  Needs permisson? " + e.getMessage());
+//                e.printStackTrace();
             }
+
             return null;
 
         }
