@@ -57,6 +57,15 @@
    more info regarding xml pullparser can be read here : https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html
 
 
+    13th june
+  =============
+
+1. starting today by adding some more code to the while loop in the pull parser for the xmlpullparser class.
+   adding some tag like start_tag , text , end_tag with the help of switch and if statements.
+
+
+
+
 
 
 
