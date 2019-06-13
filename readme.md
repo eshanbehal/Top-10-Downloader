@@ -85,6 +85,8 @@
 
    more info on layoutinflater : https://developer.android.com/reference/android/view/LayoutInflater.html
 
+6. At last added code for the custom adapter implementation.
+
  
 
 
