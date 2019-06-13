@@ -77,7 +77,15 @@
    ArrayAdapters: it is very basic it can put data into a single textview widget.it uses objects "tostring" method
    and puts the returned string into the the textview.
 
-   for more info on ArrayAdapters view this link : https://developer.android.com/reference/android/widget/ArrayAdapter.html  
+   for more info on ArrayAdapters view this link : https://developer.android.com/reference/android/widget/ArrayAdapter.html 
+
+5. added code for the layout inflater and context for the app in new java class feed adapter.
+
+   more info on CONTEXT : https://developer.android.com/reference/android/content/Context.html
+
+   more info on layoutinflater : https://developer.android.com/reference/android/view/LayoutInflater.html
+
+ 
 
 
 
