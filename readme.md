@@ -63,6 +63,22 @@
 1. starting today by adding some more code to the while loop in the pull parser for the xmlpullparser class.
    adding some tag like start_tag , text , end_tag with the help of switch and if statements.
 
+2. After putting code for xmlpullparser now will be creating the laout for my app inorder to display the rssfeed 
+   data.
+   So here i have used a listview widget for scrolling inbetween the data for multiple records.
+
+3. also i will be using the concept of adaptors for my app.
+   using adapters as to make the listview work , we have to put an adapter between the data and the listview.
+   
+   whenevr the listview needs to display any data, it asks the adapters for a view that it can display data on.
+
+4. here i am using the arrayadapter thats the part of the android framework.
+
+   ArrayAdapters: it is very basic it can put data into a single textview widget.it uses objects "tostring" method
+   and puts the returned string into the the textview.
+
+   for more info on ArrayAdapters view this link : https://developer.android.com/reference/android/widget/ArrayAdapter.html  
+
 
 
 
