@@ -87,6 +87,13 @@
 
 6. At last added code for the custom adapter implementation.
 
+
+       14th june
+     =============
+
+1. starting off today with making my own custom adapter more efficient in terms of the views used for every data it 
+   displays and also for the memory used during the using of app.
+
  
 
 
