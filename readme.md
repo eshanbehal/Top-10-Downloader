@@ -99,6 +99,14 @@
 
 3. added menu to my app for seleting among various feeds like free apps , paid apps , songs etc.
 
+4. next thing i have added to my app is the menu group and created private objects for ths in the app.
+
+   also used the %d sign in the feed url as its a way to specify an integer value that will be replaced by a actual value
+   using the String.format method.
+
+   here String.format method is a method that takes special characters like %d and number of values that are used to replace 
+   the format codes.
+
 
  
 
