@@ -6,12 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -21,35 +19,54 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private ListView listApps;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listApps = (ListView) findViewById(R.id.xmlListView);
 
-
-        Log.d(TAG, "onCreate: starting Asynctask");
-        DownloadData downloadData = new DownloadData();
-        downloadData.execute("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/xml");
-        Log.d(TAG, "onCreate: done");
+        downloadUrl("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/xml");
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.feeds_menu , menu);
+        getMenuInflater().inflate(R.menu.feeds_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        int id = item.getItemId();
+        String feedUrl;
+
+        switch(id) {
+            case R.id.mnuFree:
+                feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/xml";
+                break;
+            case R.id.mnuPaid:
+                feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=25/xml";
+                break;
+            case R.id.mnuSongs:
+                feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml";
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+        downloadUrl(feedUrl);
+        return true;
+
     }
 
-    // creating subclass inside main class in order to execute asynctask method.
-    private class DownloadData extends AsyncTask<String , Void , String>{
+    private void downloadUrl(String feedUrl) {
+        Log.d(TAG, "downloadUrl: starting Asynctask");
+        DownloadData downloadData = new DownloadData();
+        downloadData.execute(feedUrl);
+        Log.d(TAG, "downloadUrl: done");
+    }
 
+    private class DownloadData extends AsyncTask<String, Void, String> {
         private static final String TAG = "DownloadData";
 
         @Override
