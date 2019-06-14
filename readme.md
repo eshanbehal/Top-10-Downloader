@@ -107,6 +107,8 @@
    here String.format method is a method that takes special characters like %d and number of values that are used to replace 
    the format codes.
 
+   for more info about the menus: https://developer.android.com/guide/topics/ui/menus.html
+
 
  
 
