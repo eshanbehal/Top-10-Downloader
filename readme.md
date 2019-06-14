@@ -94,6 +94,10 @@
 1. starting off today with making my own custom adapter more efficient in terms of the views used for every data it 
    displays and also for the memory used during the using of app.
 
+2. added code for the viewholder pattern in order to make app more efficient and fast as it uses small class to hold
+   the view that we find the last time.
+
+
  
 
 
