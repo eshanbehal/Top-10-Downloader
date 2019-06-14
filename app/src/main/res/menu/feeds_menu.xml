@@ -4,16 +4,16 @@
 
     <item
         android:id="@+id/mnuFree"
-        android:title="Free Apps" />
+        android:title="Free apps" />
     <item
         android:id="@+id/mnuPaid"
-        android:title="Paid Apps" />
+        android:title="Paid apps" />
     <item
         android:id="@+id/mnuSongs"
         android:title="Songs" />
     <group
         android:id="@+id/mnugrpLimit"
-        android:checkableBehavior="single" >
+        android:checkableBehavior="single">
         <item
             android:id="@+id/mnu10"
             android:checked="true"
@@ -22,4 +22,6 @@
             android:id="@+id/mnu25"
             android:title="Top 25" />
     </group>
+    <item android:title="Refresh"
+        android:id="@+id/mnuRefresh" />
 </menu>

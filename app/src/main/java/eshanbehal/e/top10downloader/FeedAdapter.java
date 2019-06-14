@@ -33,6 +33,7 @@ public class FeedAdapter extends ArrayAdapter {
         ViewHolder viewHolder;
 
         if (convertView == null) {
+
             convertView = layoutInflater.inflate(layoutResource, parent, false);
 
             viewHolder = new ViewHolder(convertView);
@@ -41,9 +42,9 @@ public class FeedAdapter extends ArrayAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-//        TextView tvName = (TextView) convertView.findViewById(R.id.tvName);
-//        TextView tvArtist = (TextView) convertView.findViewById(R.id.tvArtist);
-//        TextView tvSummary = (TextView) convertView.findViewById(R.id.tvSummary);
+        TextView tvName = (TextView) convertView.findViewById(R.id.tvName);
+        TextView tvArtist = (TextView) convertView.findViewById(R.id.tvArtist);
+        TextView tvSummary = (TextView) convertView.findViewById(R.id.tvSummary);
 
         FeedEntry currentApp = applications.get(position);
 
@@ -60,9 +61,31 @@ public class FeedAdapter extends ArrayAdapter {
         final TextView tvSummary;
 
         ViewHolder(View v) {
-            this.tvName = v.findViewById(R.id.tvName);
-            this.tvArtist = v.findViewById(R.id.tvArtist);
-            this.tvSummary = v.findViewById(R.id.tvSummary);
+            this.tvName = (TextView) v.findViewById(R.id.tvName);
+            this.tvArtist = (TextView) v.findViewById(R.id.tvArtist);
+            this.tvSummary = (TextView) v.findViewById(R.id.tvSummary);
         }
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
