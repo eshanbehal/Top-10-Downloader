@@ -97,6 +97,8 @@
 2. added code for the viewholder pattern in order to make app more efficient and fast as it uses small class to hold
    the view that we find the last time.
 
+3. added menu to my app for seleting among various feeds like free apps , paid apps , songs etc.
+
 
  
 
